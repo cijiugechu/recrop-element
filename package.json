@@ -1,7 +1,7 @@
 {
 	"name": "recrop-element",
 	"private": false,
-	"description": "A custom element for cropping a square image",
+	"description": "A React component for cropping a square image",
 	"author": "nemurubaka",
 	"keywords": ["react", "component", "image", "crop"],
 	"main": "dist/index.js",
