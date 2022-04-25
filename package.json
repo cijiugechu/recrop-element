@@ -15,8 +15,14 @@
 	"files": [
 		"dist"
 	],
+	"homepage": "https://github.com/cijiugechu/recrop-element",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:cijiugechu/recrop-element.git"
+	},
+	"bugs": "https://github.com/cijiugechu/recrop-element/issues",
 	"license": "MIT",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
