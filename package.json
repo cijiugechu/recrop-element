@@ -1,7 +1,7 @@
 {
 	"name": "recrop-element",
 	"private": false,
-	"description": "A React component for cropping a square image",
+	"description": "React bindings for @github/image-crop-element",
 	"author": "nemurubaka",
 	"keywords": [
 		"react",
