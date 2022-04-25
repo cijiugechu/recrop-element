@@ -6,6 +6,10 @@ interface ReImgaeCropProps {
 	rounded: boolean
 	loadingImage?: string
 	onImageChange?: (event: CustomEvent<ChangeDetail>) => void
+	displayX?: boolean
+	displayY?: boolean
+	displayWidth?: boolean
+	displayHeight?: boolean
 }
 
 interface ReImgaeCropElementProps {
@@ -41,7 +45,16 @@ declare global {
 }
 
 const ReImgaeCrop = (props: ReImgaeCropProps) => {
-	const { src, rounded, loadingImage, onImageChange } = props
+	const {
+		src,
+		rounded,
+		loadingImage,
+		onImageChange,
+		displayX,
+		displayY,
+		displayWidth,
+		displayHeight
+	} = props
 
 	useEffect(() => {
 		if (onImageChange) {
@@ -58,6 +71,22 @@ const ReImgaeCrop = (props: ReImgaeCropProps) => {
 	return (
 		<image-crop src={src} rounded={rounded}>
 			{loadingImage ? <img src={loadingImage} data-loading-slot /> : null}
+			{displayX ? (
+				<input type="text" data-image-crop-input="x" name="x" />
+			) : null}
+			{displayY ? (
+				<input type="text" data-image-crop-input="y" name="y" />
+			) : null}
+			{displayWidth ? (
+				<input type="text" data-image-crop-input="width" name="width" />
+			) : null}
+			{displayHeight ? (
+				<input
+					type="text"
+					data-image-crop-input="height"
+					name="height"
+				/>
+			) : null}
 		</image-crop>
 	)
 }
