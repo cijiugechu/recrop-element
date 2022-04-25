@@ -1,6 +1,13 @@
 {
-	"name": "react-image-crop",
-	"private": true,
+	"name": "recrop-element",
+	"private": false,
+	"description": "A custom element for cropping a square image",
+	"author": "nemurubaka",
+	"keywords": ["react", "component", "image", "crop"],
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"typings": "dist/index.d.ts",
+	"files": ["dist"],
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "vite",
