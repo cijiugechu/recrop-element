@@ -9,4 +9,5 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   dts: true,
   target: 'es2020',
+  outDir: 'pkg_dist'
 })

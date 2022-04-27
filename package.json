@@ -9,11 +9,11 @@
 		"image",
 		"crop"
 	],
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
-	"typings": "dist/index.d.ts",
+	"main": "pkg_dist/index.js",
+	"module": "pkg_dist/index.mjs",
+	"typings": "pkg_dist/index.d.ts",
 	"files": [
-		"dist"
+		"pkg_dist"
 	],
 	"homepage": "https://github.com/cijiugechu/recrop-element",
 	"repository": {
