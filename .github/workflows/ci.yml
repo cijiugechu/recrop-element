@@ -31,7 +31,6 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: dist
-          keep_history: true
-          absolute_build_dir: true
+          fqdn: cijiugechu.github.io/recrop-element
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
