@@ -22,11 +22,11 @@
 	},
 	"bugs": "https://github.com/cijiugechu/recrop-element/issues",
 	"license": "MIT",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"build:tsup": "tsup",
+		"build:pkg": "tsup",
 		"prettier": "npx prettier --write src",
 		"preview": "vite preview"
 	},
