@@ -1,11 +1,13 @@
 import "@github/image-crop-element"
 import { useEffect } from "react"
 
+type ImageChangeEvent = CustomEvent<ChangeDetail>
+
 interface ReImgaeCropProps {
 	src: string
 	rounded: boolean
 	loadingImage?: string
-	onImageChange?: (event: CustomEvent<ChangeDetail>) => void
+	onImageChange?: (event: ImageChangeEvent) => void
 	displayX?: boolean
 	displayY?: boolean
 	displayWidth?: boolean
@@ -91,6 +93,6 @@ const ReImgaeCrop = (props: ReImgaeCropProps) => {
 	)
 }
 
-export type { ReImgaeCropProps }
+export type { ReImgaeCropProps, ImageChangeEvent }
 
 export default ReImgaeCrop
